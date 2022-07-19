@@ -23,10 +23,17 @@
     right: 73.49%;
     top: calc(50% - 24px/2);
     margin-left: 18px;
-    text-decoration: none;
-    
+    text-decoration: none; 
+}
+.header--nav a:hover{
+    color: rgb(2, 2, 2);
+    background: rgb(255, 255, 255);
+    tansition: all .3s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
 }
 .header-nav__button{
+    max-width: 172px;
     width: 172px;
     height: 40px;
     font-family: 'Poppins',sans-serif;
@@ -42,9 +49,16 @@
     border-radius: 4px;
     margin-left: 26px;
 }
+.header-nav__button:hover{
+    color: rgb(2, 2, 2);
+    background: rgb(255, 255, 255);
+    tansition: all .3s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
 /* Секция main */
 .happy{
-    width: 1168px;
+    max-width: 1161px;
     height: 455px;
     display: flex;
     flex-direction: row;
@@ -52,7 +66,7 @@
     overflow: hidden;
 }
 .happy-info{
-    width: 420px ;
+    max-width: 420px;
     height: 354px;
     margin-top: 45px;
 }
@@ -73,8 +87,9 @@
     margin-top: 18px;
 }
 .happy-info__button{
-    width: 148px;
-    height: 40px;
+    max-width: 148px;
+    width: 100%;
+    min-height: 40px;
     border-radius: 4px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -86,6 +101,19 @@
     line-height: 18px;
     margin-top: 20px;
 }
+.happy-info__button:hover{
+    color: rgb(2, 2, 2);
+    background: rgb(255, 255, 255);
+    tansition: all .3s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+.happy-phone img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 /* Секция Phone */
 
 .container{
@@ -118,6 +146,7 @@
     height: 72px;
 }
 .container-oll{
+    max-width: 1231px;
     width: 1231px;
     height: 1138px;
     margin-top: 45px;
@@ -126,6 +155,7 @@
 .container-oll-calendar{
     display: flex;
     flex-direction: column;
+    max-width: 389px;
     width: 389px;
     height: 490px;
     border-radius: 20px;
@@ -156,6 +186,12 @@
     top: -30px;
     background: #0278ED;
 }
+.container-oll-calendar-info__img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 .container-oll-calendar-info--calendar{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -215,6 +251,12 @@
     top: -30px;
     background: #FF5437;
 }
+.container-oll-list-info__img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 .container-oll-list-info--list{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -274,6 +316,12 @@
     top: -30px;
     background: #FF9209;
 }
+.container-oll-typ-info__img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 .container-oll-typ-info--typ{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -334,6 +382,12 @@
     top: -30px;
     background: #E738CE;
 }
+.container-oll-split-info__img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 .container-oll-split-info--split{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -394,6 +448,12 @@
     top: -30px;
     background: #00C6DF;
 }
+.container-oll-uploads-info__img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 .container-oll-uploads-info--uploads{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -454,6 +514,12 @@
     top: -30px;
     background: #B25DF8;
 }
+.container-oll-focus-info__img:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 .container-oll-focus-info--focus{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
@@ -590,6 +656,12 @@
     margin-top: 50px;
     margin-left: 194px;
 }
+.technology-container-phone:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 /* Секция speed */
 .speed{
     display: flex;
@@ -636,6 +708,12 @@
     height: 500px;
     margin-top: 50px;
 }
+.speed-container-phone:hover{
+    animation: jump 1s ease infinite;
+}
+@keyframes jump {
+    60% { transform: translateY(5px); }
+  }
 /* dark */
 
 .dark{
@@ -968,6 +1046,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+/* Секция comment */
 .comment{
     height: 554px;
     overflow: hidden;
@@ -1071,6 +1150,7 @@
 .comment-container-oll-vestibulion img{
     padding: 20px;
 }
+/* Секция download */
 .download{
     display: flex;
     flex-direction: column;
@@ -1113,6 +1193,7 @@
 .download img{
     margin-top: 28px;
 }
+/* Секция FAQ */
 .faq{
     background: #E5E5E5;
     border-radius: 0px;
@@ -1192,6 +1273,7 @@
     color: #222222;
     
 }
+/* Подвал */
 .footer{
     display: flex;
     flex-direction: column;
